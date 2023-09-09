@@ -1,0 +1,9 @@
+FROM golang:1.21.1-bookworm
+
+WORKDIR /usr/app
+
+ADD --chmod=+x ./run.sh .
+
+ENTRYPOINT [ "./run.sh" ]
+
+CMD [ "./main" ]

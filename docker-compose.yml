@@ -1,0 +1,6 @@
+services:
+  example-app:
+    build:
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/usr/app
